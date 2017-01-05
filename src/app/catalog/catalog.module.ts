@@ -10,6 +10,13 @@ import { InstanceTypesComponent } from './instance-types/instance-types.componen
   imports: [
     CommonModule
   ],
+  exports: [
+    InventoryComponent,
+    ImagesComponent,
+    InstancesComponent,
+    ApplicationsComponent,
+    InstanceTypesComponent
+  ],
   declarations: [InventoryComponent, ImagesComponent, InstancesComponent, ApplicationsComponent, InstanceTypesComponent]
 })
 export class CatalogModule { }
