@@ -3,12 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 
+import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavigationModule } from './navigation/navigation.module';
 import { CatalogModule } from './catalog/catalog.module';
+import { DiscoverModule } from './discover/discover.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CatalogModule } from './catalog/catalog.module';
     HttpModule,
     RouterModule.forRoot(appRoutes),
     NavigationModule,
-    CatalogModule
+    CatalogModule,
+    DiscoverModule
   ],
   providers: [],
   bootstrap: [AppComponent]
