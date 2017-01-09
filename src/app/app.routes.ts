@@ -14,7 +14,7 @@ export const appRoutes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   {
-    path: 'catalog',
+    path: 'tmp-catalog',
     children: [
       { path: '', redirectTo: 'inventory', pathMatch: 'full' },
       { path: 'inventory', component: InventoryComponent },
@@ -25,7 +25,7 @@ export const appRoutes: Routes = [
     ]
   },
   {
-    path: 'discover',
+    path: 'tmp-discover',
     children: [
       { path: '', redirectTo: 'site', pathMatch: 'full' },
       { path: 'site', component: SiteComponent },
