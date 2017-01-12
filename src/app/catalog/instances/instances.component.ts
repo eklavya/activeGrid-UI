@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Instance } from '../data-models/instance.model';
+import { CatalogService } from '../catalog.service'
+
+
 @Component({
   selector: 'app-instances',
   templateUrl: './instances.component.html',
@@ -7,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstancesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private catalogService: CatalogService) {
+    this.catalogService.getInstances(16)
+  }
 
   ngOnInit() {
   }
