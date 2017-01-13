@@ -15,6 +15,11 @@ export class CatalogService {
                     .map(this.extractData);
   }
 
+  getApplications(siteId: Number) : Observable<any> {
+    return this.http.get(`${this.baseUrl}sites/{siteId}/applications`)
+                    .map(this.extractData);
+  }
+
   private extractData(res: Response) {
     let body = res.json();
     return body.data || { };

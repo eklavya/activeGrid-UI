@@ -1,3 +1,45 @@
-<p>
-  applications works!
-</p>
+<div class="header">
+  <h3>Applications</h3>
+</div>
+
+<div class="row">
+  <form class="form-inline" role="form">
+    <div class="col-md-4">
+      <div class="form-group form-group-sm">
+        <div class="input-group">
+          <div class="input-group-addon"><span class="glyphicon glyphicon-filter"> </span></div>
+          <input class="col-md-2 form-control ng-valid ng-dirty" placeholder="filter" ng-model="filterText">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="dropdown">
+        <label for="alterEgo">Select Site</label>
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Select Site
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li *ngFor="let site of sites"><a>{{sites}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pull-right">
+        <button type="button" class="btn btn-primary">Add Application</button>
+      </div>
+    </div>
+  </form>
+</div>
+<table class="table table-bordered">
+  <tr>
+    <th>Application Name</th>
+    <th>Description</th>
+    <th>Version</th>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
